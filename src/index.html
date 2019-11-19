@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto Trivia2</title>
+</head>
+<!-- Esta es la primera página de Bienvenida donde te pide el nombre-->
+<div class="pagina1" id="pagina1">
+    <img class="logo-principal" src="https://cdn140.picsart.com/294380175181201.png?r1024x1024" alt="logo">
+    <p>Prepárate para contestar las trivias</p>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <form class="bienvenida" method="post">
+      <label for="cuadro-texto1">Nombre: </label>
+      <input type="text" placeholder="Escribe tu nombre" id="cuadro-texto1" class="cuadro-texto1" required/><br></br>
+    <button type="button" class="comenzar" name="comenzar" onclick="saludar();">Comenzar</button>
+    </form>
+  </div>
+<!-- Es la segunda página donde viene el saludo personalizado y las 2 opciones de trivia-->
+  <div class="pagina2" id="pagina2">
+    <img class="logo-principal" src="https://cdn140.picsart.com/294380175181201.png?r1024x1024" alt="logo">
+    <span>Hola </span><span name="saludo" id="saludo" class="saludo"></span><span> elige una de las siguientes opciones:</span>
+    <table id="tablaOpciones" class="tablaOpciones">
+      <tr>
+        <td><img class="logoTerror" src="https://cdn130.picsart.com/294520871159201.png?r1024x1024"></td>
+        <td><img class="logoInfantil" src="https://cdn130.picsart.com/294520882059201.png?r1024x1024"></td>   
+      </tr>
+      <tr>
+        <td><a class="triviasOpciones" onclick="elegirTerror();">Películas de Terror</a></td>
+        <td><a class="triviasOpciones2" onclick="elegirInfantil();">Películas Infantiles</a></td>
+      </tr>
+    </table>
+  </div>
+<!-- Es la tercera página donde están las preguntas sobre películas de terror (tema A)-->
+  <div id="terrorContainer" name="terrorContainer"class="terror-container">
+    <img class="logo-principal" src="https://cdn140.picsart.com/294380175181201.png?r1024x1024" alt="logo">
+    <div id="cronometro" class="cronometro"></div>
+ <!-- Primera pregunta-->
+    <div id="pregunta1" class="pregunta">1.- ¿Cómo se llama la película estrenada en el 2001 sobre dos hermanos asediados en la carretera por una criatura aterradora?
+  <label class="opcionA"><input type="radio" name="opcion1" value="Jeepers creepers (El demonio)"/>Jeepers creepers (El demonio)</label>
+  <label class="opcionA"><input type="radio" name="opcion1" value="Saw II"/>Saw II</label>
+  <label class="opcionA"><input type="radio" name="opcion1" value="Halloween"/>Halloween</label>
+    </div>
+ <!-- Segunda pregunta-->
+  <div id="pregunta2" class="pregunta">2.- ¿Película de 1999 en estilo documental filmada en el bosque, donde tres estudiantes deciden investigar la veracidad de una leyenda?
+  <label class="opcionA"><input type="radio" name="opcion2" value="El amanecer de los muertos"/>El amanecer de los muertos</label>
+  <label class="opcionA"><input type="radio" name="opcion2" value="La cabaña"/>La cabaña</label>
+  <label class="opcionA"><input type="radio" name="opcion2" value="El Proyecto de la Bruja de Blair"/>El Proyecto de la Bruja de Blair</label>
+  </div>
+<!-- Tercera pregunta-->
+  <div id="pregunta3" class="pregunta">3.- ¿Cuál es el nombre de la película del 2013 donde Ed y Lorrain Warren (investigadores de fenómenos paranormales) se enfrentan a una entidad demoníaca que atormenta a una familia?
+  <label class="opcionA"><input type="radio" name="opcion3" value="El exorcismo Emily Rose"/>El exorcismo Emily Rose</label>
+  <label class="opcionA"><input type="radio" name="opcion3" value="El conjuro"/>El conjuro</label>
+  <label class="opcionA"><input type="radio" name="opcion3" value="Psicosis"/>Psicosis</label>
+  </div>
+     	<button id="sigBoton" class="sig-boton" onclick="cargaSigPregunta();">Siguiente</button>
+      <button id="sigBoton2" class="sig-boton" onclick="cargaSigPregunta2();">Siguiente</button>
+      <button id="finBoton" class="fin-boton" onclick="cargaResultados();">Finalizar</button>
+</div>
+
+<!-- Es la cuarta página donde están las preguntas sobre películas infantiles (tema B)-->
+  <div id="infantilContainer" name="infantilContainer" class="infantil-container">
+    <img class="logo-principal" src="https://cdn140.picsart.com/294380175181201.png?r1024x1024" alt="logo">
+    <div id="cronometro" class="cronometro"></div>
+    <!-- Primera pregunta-->
+  <div id="pregunta4" class="pregunta">1.- ¿Película sobre niños exploradores, globos y una expedición para llegar a Cataratas del paraíso?
+  <label class="opcionB"><input type="radio" name="opcion4" value="La aventuras de Bill"/>La aventuras de Bill</label>
+  <label class="opcionB"><input type="radio" name="opcion4" value="Up: Una aventura de altura"/>Up: Una aventura de altura</label>
+  <label class="opcionB"><input type="radio" name="opcion4" value="Lluvia de hamburguesas"/>Lluvia de hamburguesas</label>
+  </div>
+ <!-- Segunda pregunta-->
+  <div id="pregunta5" class="pregunta">2.- ¿Cuál es el nombre de la película que habla sobre una niña llamada Riley y las emociones que vive al momento de mudarse junto con su familia a San Francisco?
+  <label class="opcionB"><input type="radio" name="opcion5" value="Intensamente"/>Intensamente</label>
+  <label class="opcionB"><input type="radio" name="opcion5" value="Megamente"/>Megamente</label>
+  <label class="opcionB"><input type="radio" name="opcion5" value="Toy Storie 3"/>Toy Storie 3</label>
+  </div>
+<!-- Tercera pregunta-->
+  <div id="pregunta6" class="pregunta">3.- ¿Cómo se llama la película donde un bebé es robado del olimpo en manos de dos peculiares personajes (Pena y Pánico) y años más tarde se reencuentra con su leal compañero Pegaso?
+  <label class="opcionB"><input type="radio" name="opcion6" value="Hércules"/>Hércules</label>
+  <label class="opcionB"><input type="radio" name="opcion6" value="El príncipe de Persia"/>El príncipe de Persia</label>
+  <label class="opcionB"><input type="radio" name="opcion6" value="Cómo entrenar a tu dragón"/>Cómo entrenar a tu dragón</label>
+  </div>
+    <button id="sigBoton3" class="sig-boton" onclick="cargaSigPregunta3();">Siguiente</button>
+    <button id="sigBoton4" class="sig-boton" onclick="cargaSigPregunta4();">Siguiente</button>
+    <button id="finBoton2" class="fin-boton" onclick="cargaResultados2();">Finalizar</button>
+  </div>
+  <!-- Es la quinta página donde están los resultados-->
+  <div id="resultadosContainer" name="resultadosContainer" class="resultados-container">
+    <img class="logo-principal" src="https://cdn140.picsart.com/294380175181201.png?r1024x1024" alt="logo">
+    <span name="resultado1" id="resultado1" class="resultado1"></span>
+    <p name="resultado2" id="resultado2" class="resultado2"></p>
+    <button id="inicioBoton" class="inicio-boton" onclick="regresarInicio()">Regresar al inicio</button>
+      <table id="tablaOpciones" class="tablaOpciones">
+      <tr>
+        <td><img class="logoTerror" src="https://cdn130.picsart.com/294520871159201.png?r1024x1024"></td>
+        <td><img class="logoInfantil" src="https://cdn130.picsart.com/294520882059201.png?r1024x1024"></td> 
+      </tr>
+      <tr>
+        <td><a class="triviasOpciones" onclick="elegirTerror();">Películas de Terror</a></td>
+        <td><a class="triviasOpciones2" onclick="elegirInfantil();">Películas Infantiles</a></td>
+      </tr>
+    </table>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
