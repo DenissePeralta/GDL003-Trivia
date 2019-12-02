@@ -6,19 +6,22 @@ document.getElementById("resultadosContainer").style.display = "none";
 //Esta función es para tomar del input de texto el nombre y devolverlo en una etiqueta span dentro del html. Tambien cambia el string a mayúsculas
 function saludar(){
       let valor = document.getElementById("cuadro-texto1").value;
-  if (valor.length >= 1) {
+  if (valor.length > 0) {
     document.getElementById("saludo").innerHTML= valor.toUpperCase();
     document.getElementById("pagina1").style.display = "none";
     document.getElementById("pagina2").style.display = "block";
+  } else {
+    alert("Por favor ingresa un valor en el campo Nombre");
   }
 }
+//Estas funciones son mostrar las preguntas según la opción seleccionada
 function elegirTerror(){
   document.getElementById("resultadosContainer").style.display = "none";
   document.getElementById("pagina2").style.display = "none";
-  document.getElementById("finBoton").style.display = "none";
-  document.getElementById("sigBoton2").style.display = "none";
   document.getElementById("pregunta2").style.display = "none";
   document.getElementById("pregunta3").style.display = "none";
+  document.getElementById("finBoton").style.display = "none";
+  document.getElementById("sigBoton2").style.display = "none";
   document.getElementById("sigBoton").style.display = "block";
   document.getElementById("terrorContainer").style.display = "block";
   document.getElementById("pregunta1").style.display = "block"; 
@@ -26,14 +29,15 @@ function elegirTerror(){
 function elegirInfantil(){
   document.getElementById("resultadosContainer").style.display = "none";
   document.getElementById("pagina2").style.display = "none";
-  document.getElementById("finBoton2").style.display = "none";
-  document.getElementById("sigBoton4").style.display = "none";
   document.getElementById("pregunta5").style.display = "none";
   document.getElementById("pregunta6").style.display = "none";
+  document.getElementById("finBoton2").style.display = "none";
+  document.getElementById("sigBoton4").style.display = "none";
   document.getElementById("sigBoton3").style.display = "block";
   document.getElementById("infantilContainer").style.display = "block";
   document.getElementById("pregunta4").style.display = "block";
 }
+//Estas funciones son para cargar la siguiente pregunta hasta finalizar
 function cargaSigPregunta(){
   /*if (document.querySelector("#:checked").lenght){  
   }*/
