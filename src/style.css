@@ -1,14 +1,22 @@
-body {
+body,html  {
   display: grid;
   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('https://cdn140.picsart.com/294375144006201.jpg?r1024x1024');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; 
 }
-img.logo-principal{
+.logo-principal{
   width: 26%;
   display:block;
   margin:auto;
 }
 .bienvenida {
-  width: 60%;
+  width: 70%;
   margin: 20px;
   padding: 20px;
   display:block;
@@ -18,16 +26,100 @@ img.logo-principal{
 }
 .cuadro-texto1{
   font-size: 18px;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 4px;
+  border-radius: 5px;
+  width: 50%;
 }
-.pagina1,.pagina2{
+label{
+  font-size: 18px;
+}
+.comenzar{
+  background:#C70039;
+  color:#FFFFFF;
+  width: auto;
+  font-size: 18px;
+}
+.comenzar:hover{
+  background:#FF5733;
+}
+.pagina1, .pagina2{
   align-self: center;
   justify-self: center;
   text-align: center;
   color: #FFFFFF;
   font-family:'Ubuntu', sans-serif;
   font-size: 20px;
+  width: 100%;
+}
+span.saludo {
+  color:#D93B84;
+  font-size: 20px;
+}
+.tablaOpciones{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 85% 15%;
+  width: 90%;
+  padding: 40px 10px;
+  margin: auto;
+  width: 90%;
+}
+.logoTerror{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  width: 75%;
+}
+.logoInfantil{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width: 77%;
+}
+.logoRomanticas{
+  grid-column-start: 3;
+  grid-row-start: 1;
+  width: 80%;
+}
+button{
+  border-radius: 5px;
+  border:none;
+  margin: 20px;
   padding: 10px;
-  width: 95%;
+  font-size: 18px;
+  cursor:pointer;
+}
+.botonTerror, .botonInfantil, .botonRomanticas{
+  border-radius: 5px;
+  border:none;
+  padding: 6px;
+  font-size: 18px;
+  cursor:pointer;
+  text-decoration: none;
+}
+.botonTerror{
+  background: #0BAD92;
+  color: #000000;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.botonInfantil{
+  background: #D93B84;
+  color: #FFFFFF;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.botonRomanticas {
+  background: #F5A9A7;
+  color: #000000;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.botonTerror:hover, .botonInfantil:hover, .botonRomanticas:hover{
+  background: #FFFFFF;
+  color: #000000;
 }
 .terror-container,.infantil-container{
   width: 80%;
@@ -79,90 +171,10 @@ img.logo-principal{
 .fin-boton:hover{
   background: #F2C4B3;
 }   
-body,html  {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-image: url('https://cdn140.picsart.com/294375144006201.jpg?r1024x1024');
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover; 
-}
 hr{
   margin-top: 200px;
   margin-bottom: 50px;
   border: 0.5px solid #000000;
-}
-label{
-  font-size: 15px;
-}
-button{
-  border-radius: 5px;
-  border:none;
-  margin: 20px;
-  padding: 6px;
-  font-size: 16px;
-  cursor:pointer;
-}
-.comenzar{
-  background:#C70039;
-  color:#FFFFFF;
-  width: 15%;
-  font-size: 18px;
-}
-.comenzar:hover{
-  background:#FF5733;
-}
-.cuadro-texto1{
-  margin-top: 20px;
-  margin-left: 10px;
-  padding: 4px;
-  border-radius: 5px;
-  width: 50%;
-}
-span.saludo {
-  color:#D93B84;
-  font-size: 20px;
-}
-.tablaOpciones{ 
-  width: 80%;
-  padding: 10px;
-  margin:auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.triviasOpciones{
-  background: #0BAD92;
-  color: #000000;
-  border-radius: 5px;
-  border:none;
-  padding: 6px;
-  font-size: 18px;
-  cursor:pointer;
-  text-decoration: none;
-}
-.triviasOpciones:hover{
-  background: #BDF2ED;
-  color: #000000;
-}
-.triviasOpciones2{
-  background: #D93B84;
-  color: #FFFFFF;
-  border-radius: 5px;
-  border:none;
-  padding: 6px;
-  font-size: 18px;
-  cursor:pointer;
-  text-decoration: none;
-}
-.triviasOpciones2:hover{
-  background: #F5A9A7;
-  color: #000000;
-}
-.logoTerror, .logoInfantil{
-  width: 60%;
 }
 .resultados-container{
   text-align: center;

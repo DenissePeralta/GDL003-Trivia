@@ -1,0 +1,21 @@
+{
+    "terror": [{
+        "question": "¿Cómo se llama la película estrenada en el 2001 sobre dos hermanos asediados en la carretera por una criatura aterradora?",
+        "option1": "Jeepers creepers (El demonio)",
+        "option2": "Saw II",
+        "option3": "Halloween",
+        "answer": "1"
+    },{
+        "question": "¿Película de 1999 en estilo documental filmada en el bosque, donde tres estudiantes deciden investigar la veracidad de una leyenda?",
+        "option1": "El amanecer de los muertos",
+        "option2": "La cabaña",
+        "option3": "El Proyecto de la Bruja de Blair",
+        "answer": "3"
+    },{
+        "question": "¿Cuál es el nombre de la película del 2013 donde Ed y Lorrain Warren se enfrentan a una entidad demoníaca que atormenta a una familia?",
+        "option1": "El exorcismo Emily Rose",
+        "option2": "El conjuro",
+        "option3": "Psicosis",
+        "answer": "2"
+    }]
+}
