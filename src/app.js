@@ -1,6 +1,6 @@
 //Creando la conexión fetch con el json subido al github
 let trivia;
-fetch(`https://raw.githubusercontent.com/Laboratoria/GDL003-Trivia/master/src/triviaQuestions.json`)
+fetch(`https://raw.githubusercontent.com/DenissePeralta/GDL003-Trivia/master/src/triviaQuestions.json`)
 
   .then(function(response) {
     return response.json();
@@ -25,9 +25,19 @@ function saludar(){
     alert("Por favor ingresa un valor en el campo Nombre");
   }
 }
+
+let preguntaActual = 0;
+let resultados = 0;
 //Estas funciones son mostrar las preguntas según la opción seleccionada
 function elegirTerror(){
-  console.log(trivia);
+  let preguntaContainer = document.getElementById("preguntasTerror");
+  let opt1 = document.getElementById("opcion1");
+  let opt2 = document.getElementById("opcion2");
+  let opt3 = document.getElementById("opcion3");
+  let totalPreguntas =  trivia.questions.length;
+  console.log(totalPreguntas);
+  console.log(trivia.questions);
+   
   document.getElementById("resultadosContainer").style.display = "none";
   document.getElementById("pagina2").style.display = "none";
   document.getElementById("terrorContainer").style.display = "block";

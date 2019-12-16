@@ -1,21 +1,66 @@
 {
-    "terror": [{
+    "questions": [{
         "question": "¿Cómo se llama la película estrenada en el 2001 sobre dos hermanos asediados en la carretera por una criatura aterradora?",
         "option1": "Jeepers creepers (El demonio)",
         "option2": "Saw II",
         "option3": "Halloween",
+        "category": "terror",
         "answer": "1"
     },{
         "question": "¿Película de 1999 en estilo documental filmada en el bosque, donde tres estudiantes deciden investigar la veracidad de una leyenda?",
         "option1": "El amanecer de los muertos",
         "option2": "La cabaña",
         "option3": "El Proyecto de la Bruja de Blair",
+        "category": "terror",
         "answer": "3"
     },{
         "question": "¿Cuál es el nombre de la película del 2013 donde Ed y Lorrain Warren se enfrentan a una entidad demoníaca que atormenta a una familia?",
         "option1": "El exorcismo Emily Rose",
         "option2": "El conjuro",
         "option3": "Psicosis",
+        "category": "terror",
+        "answer": "2"
+    },{
+        "question": "¿Película sobre niños exploradores, globos y una expedición para llegar a Cataratas del paraíso?",
+        "option1": "La aventuras de Bill",
+        "option2": "Up: Una aventura de altura",
+        "option3": "Lluvia de hamburguesas",
+        "category": "infantil",
+        "answer": "2"
+    },{
+        "question": "¿Cuál es el nombre de la película que habla sobre una niña llamada Riley y las emociones que vive al momento de mudarse junto con su familia a San Francisco?",
+        "option1": "Intensamente",
+        "option2": "Megamente",
+        "option3": "Toy Storie 3",
+        "category": "infantil",
+        "answer": "1"
+    },{
+        "question": "¿Cómo se llama la película donde un bebé es robado del olimpo en manos de dos peculiares personajes (Pena y Pánico) y años más tarde se reencuentra con su leal compañero Pegaso?",
+        "option1": "Hércules",
+        "option2": "El príncipe de Persia",
+        "option3": "Cómo entrenar a tu dragón",
+        "category": "infantil",
+        "answer": "1"
+    },{
+        "question": "¿Cómo se llama la película sobre 2 buenos amigos?",
+        "option1": "loco por mary",
+        "option2": "mujer bonita",
+        "option3": "Como si fuera cierto",
+        "category": "romantica",
+        "answer": "1"
+    },{
+        "question": "¿Película de 1999 ?",
+        "option1": "Un amor para recordar",
+        "option2": "si señor",
+        "option3": "El amor",
+        "category": "romantica",
+        "answer": "3"
+    },{
+        "question": "¿Cuál es el nombre de la película ?",
+        "option1": "El diario de un pasión",
+        "option2": "Viviendo con mi ex",
+        "option3": "Ligeramente emvarazada",
+        "category": "romantica",
         "answer": "2"
     }]
 }
