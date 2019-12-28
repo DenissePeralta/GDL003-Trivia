@@ -44,25 +44,25 @@
         "answer": "1"
     }],
     "romantic": [{
-        "question": "¿Cómo se llama la película sobre 2 buenos amigos?",
-        "option1": "loco por mary",
-        "option2": "mujer bonita",
-        "option3": "Como si fuera cierto",
-        "category": "romantica",
-        "answer": "1"
-    },{
-        "question": "¿Película de 1999 ?",
-        "option1": "Un amor para recordar",
-        "option2": "si señor",
-        "option3": "El amor",
+        "question": "¿Cómo se llama la película donde un veterinario intenta reiteradamente que una mujer con problemas de memoria se enamore nuevamente de él?",
+        "option1": "Loco por mary",
+        "option2": "Mujer bonita",
+        "option3": "Como si fuera la primera vez",
         "category": "romantica",
         "answer": "3"
     },{
-        "question": "¿Cuál es el nombre de la película ?",
-        "option1": "El diario de un pasión",
-        "option2": "Viviendo con mi ex",
-        "option3": "Ligeramente emvarazada",
+        "question": "¿Película donde Carl Allen muestra una tendencia enfermiza a decir siempre que no, hasta que se inscribe en un programa de autoayuda?",
+        "option1": "Un amor para recordar",
+        "option2": "Si señor",
+        "option3": "Los fantasmas de mi ex",
         "category": "romantica",
         "answer": "2"
+    },{
+        "question": "¿Cuál es el nombre de la película que cuenta la historia de dos jóvenes que se volvieron amantes en los años 40' apesar de las diferencias sociales?",
+        "option1": "El diario de un pasión",
+        "option2": "Viviendo con mi ex",
+        "option3": "Ligeramente embarazada",
+        "category": "romantica",
+        "answer": "1"
     }]
 }
