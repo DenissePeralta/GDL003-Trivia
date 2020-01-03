@@ -122,11 +122,11 @@ button{
   color: #000000;
 }
 .triviasContainer{
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
   margin: 20px;
   padding: 20px;
-  background:rgba(0, 0, 0, 0.4);
+  background:rgba(0, 0, 0, 0.6);
   display:block;
   margin:auto;
   color: #FFFFFF;
@@ -134,7 +134,7 @@ button{
   font-size: 20px;
   text-align: center;
 }
-.opcionA,.opcionB{
+.opcion{
   width: 50%;
   display: block;
   margin:auto;
@@ -147,35 +147,21 @@ button{
   border-radius: 10px;
   border: 1px solid #ffffff;
 }
-.opcionA:hover{
-  background: #0BAD92;
+.opcion:hover{
+  background: #FFFFFF;
   color: #000000;
 }
-.opcionB:hover{
-  background: #D93B84;
-  color: #FFFFFF;
+.temporizador{
+  color:#FFFE69;
 }
-.cronometro{
-  color: #FFF;
-  text-align: center;
-  font-size: 40px;
-}
-.sig-boton,.fin-boton,.inicio-boton{
+.sigBoton,.inicioBoton{
   display: block;
   margin: auto;
   margin-top: 20px;
 }
-.sig-boton:hover{
+.sigBoton:hover, .inicioBoton:hover{
   background: #F2C4B3;
-}
-.fin-boton:hover{
-  background: #F2C4B3;
-}   
-hr{
-  margin-top: 200px;
-  margin-bottom: 50px;
-  border: 0.5px solid #000000;
-}
+}  
 .resultados-container{
   text-align: center;
   font-family:'Ubuntu', sans-serif;

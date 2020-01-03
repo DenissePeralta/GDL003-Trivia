@@ -29,6 +29,7 @@ function saludar(){
 let currentIndexQuestion = 0;
 
 const selectCategory = (value) => {
+  temporizador(15);
   let questionContainer = document.getElementById("questionContainer");
   let opt1 = document.getElementById("opcion1");
   let opt2 = document.getElementById("opcion2");
@@ -51,6 +52,27 @@ const selectCategory = (value) => {
       opt2.innerHTML = " " + trivia.romantic[0].option2;
       opt3.innerHTML = " " + trivia.romantic[0].option3;
     }
+}
+
+//Esta función es iniciar el temporizador en 15 segundos y mostrarlo en la panatalla
+let contador;
+
+const temporizador = (segundos) => {
+  const ahora = Date.now();
+  const despues = ahora + segundos * 1000;
+  mostrarTiempo(segundos);
+
+  contador = setInterval(() => {
+    const segundosRestantes = Math.round((despues - Date.now()) / 1000);
+    if (segundosRestantes < 0) {
+      clearInterval(contador);
+      return;
+    }
+    mostrarTiempo(segundosRestantes);
+  }, 1000);
+}
+const mostrarTiempo = (segundos) => {
+  document.getElementById("temporizador").innerHTML = `${0}${0}:${segundos < 10? "0" : ""}${segundos}`;
 }
 
 //Función para hacer refresh a toda la página cuando se aprieta el botón y regresar hasta el inicio -arriba-
