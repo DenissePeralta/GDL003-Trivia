@@ -36,25 +36,25 @@ const selectCategory = (value) => {
   let opt3 = document.getElementById("opcion3");
   document.getElementById("pagina2").style.display = "none";
   document.getElementById("triviasContainer").style.display = "block";
-    if (value === "horror") {
-      questionContainer.innerHTML = (currentIndexQuestion + 1) + ". " + trivia.horror[0].question;
-      opt1.innerHTML = " " + trivia.horror[0].option1;
-      opt2.innerHTML = " " + trivia.horror[0].option2;
-      opt3.innerHTML = " " + trivia.horror[0].option3;
-    } else if (value === "kids") {
-      questionContainer.innerHTML = (currentIndexQuestion + 1) + ". " + trivia.kids[0].question;
-      opt1.innerHTML = " " + trivia.kids[0].option1;
-      opt2.innerHTML = " " + trivia.kids[0].option2;
-      opt3.innerHTML = " " + trivia.kids[0].option3;
+    if (value === "terror") {
+      questionContainer.innerHTML = (currentIndexQuestion + 1) + ". " + trivia.terror[0].question;
+      opt1.innerHTML = " " + trivia.terror[0].option1;
+      opt2.innerHTML = " " + trivia.terror[0].option2;
+      opt3.innerHTML = " " + trivia.terror[0].option3;
+    } else if (value === "infantil") {
+      questionContainer.innerHTML = (currentIndexQuestion + 1) + ". " + trivia.infantil[0].question;
+      opt1.innerHTML = " " + trivia.infantil[0].option1;
+      opt2.innerHTML = " " + trivia.infantil[0].option2;
+      opt3.innerHTML = " " + trivia.infantil[0].option3;
     } else {
-      questionContainer.innerHTML = (currentIndexQuestion + 1) + ". " + trivia.romantic[0].question;
-      opt1.innerHTML = " " + trivia.romantic[0].option1;
-      opt2.innerHTML = " " + trivia.romantic[0].option2;
-      opt3.innerHTML = " " + trivia.romantic[0].option3;
+      questionContainer.innerHTML = (currentIndexQuestion + 1) + ". " + trivia.romantica[0].question;
+      opt1.innerHTML = " " + trivia.romantica[0].option1;
+      opt2.innerHTML = " " + trivia.romantica[0].option2;
+      opt3.innerHTML = " " + trivia.romantica[0].option3;
     }
 }
 
-//Esta función es iniciar el temporizador en 15 segundos y mostrarlo en la panatalla
+//Esta función es iniciar el temporizador en 15 segundos y mostrarlo en la pantalla
 let contador;
 
 const temporizador = (segundos) => {
@@ -73,6 +73,19 @@ const temporizador = (segundos) => {
 }
 const mostrarTiempo = (segundos) => {
   document.getElementById("temporizador").innerHTML = `${0}${0}:${segundos < 10? "0" : ""}${segundos}`;
+}
+
+//Función para mostrar la siguiente pregunta
+const cargaSigPregunta = () => {
+  let opcionSeleccionada = document.querySelector('input[name="opcion"]:checked');
+  let indice = opcionSeleccionada.value;
+  console.log(opcionSeleccionada);
+  console.log(indice);
+  
+  
+  if (!opcionSeleccionada) {
+    alert("Por favor selecciona una opción")
+  }
 }
 
 //Función para hacer refresh a toda la página cuando se aprieta el botón y regresar hasta el inicio -arriba-

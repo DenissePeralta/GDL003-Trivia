@@ -1,5 +1,5 @@
 {
-    "horror": [{
+    "terror": [{
         "question": "¿Cómo se llama la película estrenada en el 2001 sobre dos hermanos asediados en la carretera por una criatura aterradora?",
         "option1": "Jeepers creepers (El demonio)",
         "option2": "Saw II",
@@ -21,7 +21,7 @@
         "category": "terror",
         "answer": "2"
     }],
-    "kids": [{
+    "infantil": [{
         "question": "¿Película sobre niños exploradores, globos y una expedición para llegar a Cataratas del paraíso?",
         "option1": "La aventuras de Bill",
         "option2": "Up: Una aventura de altura",
@@ -43,7 +43,7 @@
         "category": "infantil",
         "answer": "1"
     }],
-    "romantic": [{
+    "romantica": [{
         "question": "¿Cómo se llama la película donde un veterinario intenta reiteradamente que una mujer con problemas de memoria se enamore nuevamente de él?",
         "option1": "Loco por mary",
         "option2": "Mujer bonita",
